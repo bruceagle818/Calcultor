@@ -1,3 +1,26 @@
 body {
     background-color: #a6192e;
 }
+
+header{
+  background-color: #3d3935;
+  padding: 8px;
+
+}
+h2{
+  font-family: sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 600px;
+  background-color: white;
+  text-align: left;
+
+}
+footer{
+  background-color: #3d3935;
+  padding: 8px;
+}
+
+div.container{
+    width: 90%;
+}
