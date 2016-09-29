@@ -1,18 +1,129 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Calculator</title>
-  <link rel="stylesheet" type="text/css" href="calculator.css">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <script type="text/javascript" src="calculator.js"></script>
+
 
 </head>
 
 <body>
-<center>
-<div class="container">
-<header></header>
-<h2>Grade Calculator</h2>
-<footer></footer>
-</center>
-</div>
+    <div class="container">
+        <header></header>
+        <div class="whitecontainer">
+
+
+            <div class="col-md-9">
+                <div class="container">
+                    <div class="row">
+                        <br>
+                        <h2><strong>Grade Calculator</strong></h2>
+                    </div>
+                    <div class="row" style="padding-top:50px; background-color:#E4EAEC; padding:20px 10px 20px 10px;">
+                        <span style="color:#B5111A;"><strong> Activities</strong></span>
+                        <p style="padding-top:10px; padding-bottom:10px;"> Hi Bruce</p>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Short Name</th>
+                                    <th>Weight</th>
+                                    <th>Grade</th>
+                                    <th>Percent</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Activity 1</td>
+                                    <td>A1</td>
+                                    <td>
+                                        <input type="number" id="weight1" value="">
+                                    </td>
+
+                                    <td>
+                                        <form oninput="percent1.value=parseFloat(mygrade1.value)/parseFloat(totalgrade1.value)*100">
+                                            <input type="number" id="mygrade1" value=""> / <br>
+                                            <input type="number" id="totalgrade1" value="" style="margin-top:8px;">
+                                    </td>
+                                    <td>
+                                        <output name="percent1" for="mygrade1 totalgrade1"></output>%
+                                    </td>
+                                </tr>
+                                </form>
+                                <tr>
+                                    <td>Activity 2</td>
+                                    <td>A2</td>
+                                    <td>
+                                        <input type="number" id="weight2" value="">
+                                    </td>
+
+                                    <td>
+                                        <form oninput="percent2.value=parseInt(mygrade2.value)/parseInt(totalgrade2.value)*100">
+                                            <input type="number" id="mygrade2" value=""> / <br>
+                                            <input type="number" id="totalgrade2" value="" style="margin-top:8px;">
+                                    </td>
+                                    <td>
+                                        <output name="percent2" for="mygrade2 totalgrade2"></output>%
+                                    </td>
+                                </tr>
+                                </form>
+                                <tr>
+                                    <td>Activity 3</td>
+                                    <td>A3</td>
+                                    <td>
+                                        <input type="number" id="weight3" value="">
+                                    </td>
+
+                                    <td>
+                                        <form oninput="percent3.value=parseInt(mygrade3.value)/parseInt(totalgrade3.value)*100">
+                                            <input type="number" id="mygrade3" value=""> / <br>
+                                            <input type="number" id="totalgrade3" value="" style="margin-top:8px;">
+                                    </td>
+                                    <td>
+                                        <output name="percent3" for="mygrade3 totalgrade3"></output>%
+                                    </td>
+                                </tr>
+                                </form>
+                                <tr>
+                                    <td>Activity 4</td>
+                                    <td>A4</td>
+                                    <td>
+                                        <input type="number" id="weight4" value="">
+                                    </td>
+
+                                    <td>
+                                        <form oninput="percent4.value=parseInt(mygrade4.value)/parseInt(totalgrade4.value)*100">
+                                            <input type="number" id="mygrade4" value=""> / <br>
+                                            <input type="number" id="totalgrade4" value="" style="margin-top:8px;">
+                                    </td>
+                                    <td>
+                                        <output name="percent4" for="mygrade4 totalgrade4"></output>%
+                                    </td>
+                                </tr>
+                                </form>
+                                <tr>
+                                    <td>
+                            </tbody>
+                            <div class="button-group">
+                                <button type="button" class="btn btn-danger" onclick="function_reset()">RESET</button><br><br>
+                                <button type="button" class="btn btn-danger" onclick="function_weighted()">WEIGHTED</button>
+                                <button type="button" class="btn btn-danger" onclick="function_mean()">MEAN</button>
+                            </div>
+                        </table>
+                        <br>
+                        <span style="color:#B5111A;"><strong>Result</strong></span><br>
+                        <output id="result">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <footer></footer>
+    </div>
+
 </body>
+
 </html>

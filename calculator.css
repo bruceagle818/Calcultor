@@ -2,25 +2,56 @@ body {
     background-color: #a6192e;
 }
 
-header{
-  background-color: #3d3935;
-  padding: 8px;
-
+header {
+    background-color: #3d3935;
+    padding: 8px;
 }
-h2{
+
+div.whitecontainer {
+    height: 625px;
+    background-color: white;
+}
+
+
+/*h2{
   font-family: sans-serif;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  height: 600px;
-  background-color: white;
   text-align: left;
+}*/
 
-}
-footer{
-  background-color: #3d3935;
-  padding: 8px;
+footer {
+    background-color: #3d3935;
+    padding: 8px;
 }
 
-div.container{
-    width: 90%;
+div.container {
+    margin-left: 30px;
+    width: 60%;
+}
+
+table {
+    background-color: #E4EAEC;
+    border: 1px solid #ccc;
+}
+
+input {
+    width: 80px;
+}
+
+thead {
+    background-color: #DDDDDD;
+}
+
+div.button-group {
+    float: right;
+    margin-top: 42%;
+}
+
+button.btn{
+  border-radius: 5px;
+  background-color: #B5111A;
+  color: white;
+}
+
+table.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+  border: 1px solid #ccc;
 }
