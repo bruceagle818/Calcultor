@@ -7,9 +7,14 @@ header {
     padding: 8px;
 }
 
-div.whitecontainer {
-    height: 625px;
+.whitecontainer {
+    height: 660px;
     background-color: white;
+}
+
+.container {
+    width: 1100px;
+    margin-left: 17%;
 }
 
 
@@ -23,14 +28,10 @@ footer {
     padding: 8px;
 }
 
-div.container {
-    margin-left: 30px;
-    width: 60%;
-}
-
 table {
     background-color: #E4EAEC;
     border: 1px solid #ccc;
+    width: 650px;
 }
 
 input {
@@ -41,18 +42,16 @@ thead {
     background-color: #DDDDDD;
 }
 
-div.button-group {
+.button-group {
     float: right;
-    margin-top: 30%;
-    margin-right: 10%;
 }
 
-button.btn{
-  border-radius: 5px;
-  background-color: #B5111A;
-  color: white;
+button.btn {
+    border-radius: 5px;
+    background-color: #B5111A;
+    color: white;
 }
 
 table.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
-  border: 1px solid #ccc;
+    border: 1px solid #ccc;
 }
